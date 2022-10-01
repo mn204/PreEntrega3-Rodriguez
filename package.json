@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss node_modules/bootstrap/scss/bootstrap.scss css/styles.css",
+    "build-css": "node-sass --include-path scss scss/general.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [],
@@ -17,5 +17,13 @@
   "dependencies": {
     "bootstrap": "^5.2.1"
   },
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mn204/PreEntrega3-Rodriguez.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mn204/PreEntrega3-Rodriguez/issues"
+  },
+  "homepage": "https://github.com/mn204/PreEntrega3-Rodriguez#readme",
+  "description": "Tercera pre-entrega del proyecto"
 }
