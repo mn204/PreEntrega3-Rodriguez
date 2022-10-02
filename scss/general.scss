@@ -1,6 +1,9 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-$color-fondo: black;
-$color-letra: white;
+@import  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
+
+$estilos:(
+    color-letra: white,
+    fondo: black,
+);
 
 * {
     margin: 0;
@@ -16,11 +19,14 @@ $color-letra: white;
 html {
     min-height: 100%;
     position: relative;
+    header{
+        border-bottom: white 1px solid;
+    }
     body {
         margin: 0;
         margin-bottom: 40px;
-        background-color: $color-fondo;
-        color: $color-letra;
+        background-color: map-get($estilos,fondo);
+        color: map-get($estilos,color-letra);
         
     }
     .reverse-nav {
@@ -37,20 +43,22 @@ html {
         padding: 20px;
     }
     footer {
-        background-color: $color-fondo;
+        background-color: map-get($estilos,fondo);
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 60px;
-        color: $color-letra;
+        color: map-get($estilos,color-letra);
         padding-top:15px ;
         padding-bottom:20px;
+        border-top: white 1px solid;
+
         a {
             filter:invert(100%);
         }
     }
 }
 .videos {
-    width: 677.5px;
-    height: 375px;
+    width: 534px;
+    height: 300px;
 }
