@@ -19,9 +19,7 @@ $estilos:(
 html {
     min-height: 100%;
     position: relative;
-    header{
-        border-bottom: white 1px solid;
-    }
+
     body {
         margin: 0;
         margin-bottom: 40px;
@@ -51,7 +49,6 @@ html {
         color: map-get($estilos,color-letra);
         padding-top:15px ;
         padding-bottom:20px;
-        border-top: white 1px solid;
 
         a {
             filter:invert(100%);
@@ -61,4 +58,7 @@ html {
 .videos {
     width: 534px;
     height: 300px;
+}
+.fontes{
+    font-size: 18px;
 }

@@ -11,8 +11,6 @@
 html {
   min-height: 100%;
   position: relative; }
-  html header {
-    border-bottom: white 1px solid; }
   html body {
     margin: 0;
     margin-bottom: 40px;
@@ -32,11 +30,13 @@ html {
     height: 60px;
     color: white;
     padding-top: 15px;
-    padding-bottom: 20px;
-    border-top: white 1px solid; }
+    padding-bottom: 20px; }
     html footer a {
       filter: invert(100%); }
 
 .videos {
   width: 534px;
   height: 300px; }
+
+.fontes {
+  font-size: 18px; }
